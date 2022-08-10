@@ -1,0 +1,28 @@
+Am definit un minim si un maxim pentru viitor, facut exact ca la curs cu 10 mii
+de paranteze.
+In main mi-am facut inca un bmp cu cele trei culori BGR. Am facut tot intr-un
+while care se opreste la comanda quit. Comanda este alocata dinamic basic,
+facuta exact ca in Tema2, probbail nu stii cum arata tema mea 2, dar crede-ma
+pe cuvant.
+Dupa, cand intru in edit citesc fileheaderu si infoheaderu, si dupa trebuie sa
+citesc matricea, pe care o aloc dinamica, ghici ce, exact ca la tema2. Intr-un
+for pana la height si unu pana la width-ul matricii am citit fiecare pixel
+(adica fiecare 3 parametrii) si cand termin fiecare linie ma uit cati biti de
+padding mai sunt ca sa le dau fseek.
+La save fac cam acelasi lucru, dar invers il scriu din matrice intr-un fisier.
+Am si un int zero ca nu stiu de ce nu mergea la fwrite sa sciru un 0, ma rog.
+La insert imi citesc y si x, dupa citesc noua imagine si o scriu peste
+matricea mea. Si atunci cand trece de width dau fseek la ce a mai ramas din
+linie. Iar la height e clar ca daca merg peste cu o sa mai citesc nimic si ma
+opresc.
+La set vad daca e draw_color sau line_width si dupa le bag intr-un nou BGR,
+cred ca se intelege ca e cam basic.
+la draw citesc in functie de fiecare nush cate y-uri si x-uri si dupa intru in
+functia draw. In ea vad care e portiune e mai mare, pe x sau pe y si dupa in
+functie de asta imi fac eu o functie de linie exact cu ce ne-ati dat voi. Fac
+doua foruri ca sa fac si width-ul.
+La fill vad daca au aceeasi culoare ca si pixelul initial, nu inteleg de ce
+nu merge sa egalez alea doua structuri de acelasi timp, dar mna, ayaye.
+Ma uit daca mai pot sa ma duc jos, sus, stanga sau dreapta si apelez din nou
+functia pe pixelul ala.
+Cam asta e tot, nu prea am ce sa explic.
